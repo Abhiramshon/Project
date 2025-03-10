@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Store</title>
+    <link rel="Style sheet" href="./Dress.css" />
+</html>
+  </head>
+  <style>
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      background-color: rgba(85, 107, 47, 0);
+      padding: 10px 20px;
+    }
+    .logo{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-options{
+      display: flex;
+      gap: 15px;
+    }
+    .sign-in{
+      background-color: rgba(43, 208, 46, 0.695);
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .sign-in:hover{
+      background-color: #0056b3;
+      align-items:initial;
+    }
+    header{
+      background-color:lightslategray;
+      color: white;
+      padding: 50px;
+      text-align:center;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding: 10px 20px;
+    }
+    .logo{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .search-bar{
+      display:flex;
+      align-items: end;
+    }
+    .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .header{
+          position: fixed;
+          top: 0;
+          width: 1%;
+          background-color: lime;
+          color: white;
+          padding: 1px;
+          z-index: 10;
+        }
+        .logo{
+          margin-top: 6px;
+          padding: 2px;
+        }
+        .header{
+          display: flex;
+          justify-content: space-between;
+          align-items:center;
+          padding: 10px 20px;
+          background-color: #007BFF;
+          border-bottom: 1px solid #ccc;
+        }
+        .cart-container {
+            display: flex;
+            align-items:center;
+            margin-left: 1px;
+        }
+        .cart-container img {
+            width: 30px;
+            height: 30px;
+            margin-left: -5px;
+        }
+  </style>
+  <body>
+    <header>
+      <p style="text-align:center;">
+        <div class="logo">Free shipping to India on all orders above ₹11327</div>
+        <div class="search-bar">
+          <input type="text" placeholder="search.....">
+          <button type="submit">search</button>
+        </p>
+        </div>
+        <div class="cart-container">
+          <img src="./add-to-cart.png" alt="shopping Bag"/>
+          </div>
+      <div class="logo"></div>
+      <div class="nav-options">
+        <a class="sign-in" href="signin.html">sign in</a>
+        </div>
+      </header>
+     <img src="./fashion.jpg" height="400px",width="520px">
+    <style>
+      .subcategory {
+          display: none; /* Initially hidden */
+          margin-left: 20px; /* Indentation for subcategories */
+      }
+  </style>
+</head>
+<body>
+  <p style="text-align: start;">
+  MEN
+  </p>
+  <ul>
+     <a href="#"><i class="fa fa-home"><li onclick="toggleSubcategories('cat1')">Traditional</a></li>
+      <ul id="cat1" class="subcategory">
+          <li>Shirts</li>
+          <li>Pants</li>
+      </ul>
+      <a href="#"><i class="fa fa-home"><li onclick="toggleSubcategories('cat2')">Modern</a></li>
+      <ul id="cat2" class="subcategory">
+         <li>HODDIES</li>
+          <li>T-Shirts</li>
+      </ul>
+  </ul>
+  <script>
+      function toggleSubcategories(id) {
+          const subcategory = document.getElementById(id);
+          if (subcategory.style.display === "none" || subcategory.style.display === "") {
+              subcategory.style.display = "block"; // Show subcategories
+          } else {
+              subcategory.style.display = "none"; // Hide subcategories
+          }
+      }
+  </script>
+    <marquee style="background-color: rgba(0, 128, 107, 0.593)"
+      >FLAT 50% DSICOUNT</marquee
+    >
+    <p style="text-align: center">Spring Break Essentials</p>
+    <div style="display: flex">
+      <figure style="margin: 10px">
+        <img
+          src="./1.jpg"
+          alt="Description of image"
+          height="500px"
+          ,width="600px"
+        />
+        <figcaption>Men's Nocona Zip Rash Guard</figcaption>
+        <p>Rs. 8,500.00</p>
+        <p>Color: Baja Blue</p>
+      </figure>
+      <figure style="margin: 10px">
+        <img
+          src="./2.jpg"
+          alt="Description of image"
+          height="500px"
+          ,width="600px"
+        />
+        <figcaption>Arcadian Packable Sunblock Jacket</figcaption>
+        <p>Rs. 9,500.00</p>
+        <p>Color:white</p>
+      </figure>
+      <figure style="margin: 10px">
+        <img
+          src="./4.1.jpg"
+          alt="Description of image"
+          height="500px"
+          ,width="600px"
+        />
+        <figcaption>Men Round neck T-shirt</figcaption>
+        <p>RS.89,89.00</p>
+        <p>Color:Brown></p>
+      </figure>
+      <figure style="margin: 10px">
+        <img
+          src="./5.1.jpg"
+          alt="Description of image"
+          height="500px"
+          ,width="600px"
+        />
+        <figcaption>Top Wear T-Shirt</figcaption>
+        <p>RS.89,89.00</p>
+        <p>Color:Yellow</p>
+      </figure>
+      <figure style="margin: 10px">
+        <img
+          src="./3.1.jpg"
+          alt="Description of image"
+          height="500px"
+          ,width="600px"
+        />
+        <figcaption>Men Traditional Wear</figcaption>
+        <p>RS.89,89.00</p>
+        <p>Color:Black</p>
+      </figure>
+    </div>
+    <p>Follow us on</p>
+    <a href="https://www.instagram.com/abhiramshon/">
+      <img src="./instagram.jpg" height="100px" ,width="145px" />
+    </a>
+  </body>
+</html>
